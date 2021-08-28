@@ -1,0 +1,31 @@
+/* Fonts Used  */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&family=Poppins&display=swap');
+
+/* Styles  */
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+.title-bg{
+    font-family: 'Kaisei HarunoUmi', serif;
+    color: white;
+    background-color: black;
+    padding: 0 5px;
+}
+.title-color{
+
+color: rgb(228, 172, 30);
+
+}
+
+#empty-feild{
+    display: none;
+}
+#no-food{
+    display: none;
+}
+.card img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}

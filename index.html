@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- including bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Adding external CSS  -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Giving a shortcut icon -->
+    <link rel="shortcut icon" href="Images/1519926515744.png">
+    <title>Food-Hub</title>
+</head>
+
+<body>
+    <main class="w-75 mx-auto">
+        <!-- title Added -->
+        <section class="text-center mt-4">
+            <h1>Welcome to <span class="title-bg">Food-<span class="title-color">Hub</span></span></h1>
+            <!-- Search Box  -->
+            <div class="w-50 mx-auto mt-3">
+                <div class="input-group mb-3">
+                    <input id="search-feild" type="text" class="form-control w-50" placeholder="Search Food"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button onclick="displaySearchedItem()" class="btn btn-outline-secondary" type="button"
+                        id="search-button">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Error Message Section  -->
+        <section class="text-center">
+            <div id="empty-feild">
+                <p class="text-danger">Please Insert Text!</p>
+            </div>
+            <div id="no-food">
+                <h4 class="text-danger">Ops! Seems like we don't have this food right now!</h4>
+            </div>
+        </section>
+        <!-- Search Result Card Section  -->
+
+        <div id="spinner-display" class="text-center">
+            <div class="spinner-grow" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <section>
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+            </div>
+
+        </section>
+
+    </main>
+    <script src="JS/food.js"></script>
+    <!-- bootstrap js file added  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
